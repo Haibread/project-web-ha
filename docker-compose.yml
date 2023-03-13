@@ -21,6 +21,7 @@ services:
     restart: always
     volumes:
      - ./consul/client.json:/consul/config/client.json:ro
+     - ./consul/web_client.json:/consul/config/web_client.json:ro
     # - ./certs/:/consul/config/certs/:ro
     networks:
       - consul

@@ -1,5 +1,7 @@
 {
   "node_name": "node1",
   "data_dir": "/consul/data",
-  "retry_join": ["consul-server1"]
+  "retry_join": ["consul-server1"],
+  "enable_script_checks" : true,
+  "enable_local_script_checks": true
 }
