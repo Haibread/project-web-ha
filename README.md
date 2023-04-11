@@ -42,7 +42,7 @@ On peut relancer NGINX suite aux modification effectuées avec la commande `syst
 
 Consul peut être démarré avec la commande `consul agent -config-dir=project-web-ha/consul/server`
 
-Enfin, consul-template doit aussi être démarré avec la commande `consul-template -config=project-web-ha/template/consul-template-lb.hcl`
+Enfin, consul-template doit aussi être démarré avec la commande `consul-template -config=project-web-ha/consul/template/consul-template-lb.hcl`
 
 ## Mise en place de la partie cliente
 
