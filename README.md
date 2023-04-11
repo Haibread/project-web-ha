@@ -64,6 +64,12 @@ Pour la partie du serveur Web, on peut installer le serveur web de son choix, il
 
 Sur chacun des clients on peut cloner le projet avec la commande `git clone https://github.com/Haibread/project-web-ha.git`
 
+### Configuration de Consul sur les clients
+
+Par défaut, les client Consul vont essayer d'aller accéder au serveur `consul-server1`.
+Il est nécessaire de soit rajouter une entrée DNS pour cet hôte, soit de modifier le serveur pour pointer vers le votre.
+Pour se faire, il est nécessaire de modifier la clé `retry_join` dans le fichier `project-web-ha/consul/client/client.json`
+
 ### Lancement de Consul sur les clients
 
 Il suffit ainsi de démarrer Consul avec la commande `consul agent -config-dir=project-web-ha/consul/client`
